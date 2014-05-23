@@ -1,0 +1,52 @@
+{
+  "name": "koa-forward",
+  "version": "0.0.1",
+  "description": "forward middleware for koa",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JacksonTian/koa-forward.git"
+  },
+  "keywords": [
+    "koa",
+    "forward"
+  ],
+  "author": "Jackson Tian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JacksonTian/koa-forward/issues"
+  },
+  "homepage": "https://github.com/JacksonTian/koa-forward",
+  "dependencies": {
+    "mime": ">=1.2.4"
+  },
+  "config": {
+    "blanket": {
+      "pattern": "forward/lib",
+      "data-cover-flags": {
+        "debug": false
+      }
+    },
+    "travis-cov": { "threshold": 100 }
+  },
+  "devDependencies": {
+    "koa": ">=0.6.1",
+    "koa-router": "*",
+    "should": "*",
+    "mocha": "*",
+    "supertest": "*",
+    "blanket": "*",
+    "travis-cov": "*",
+    "coveralls": "*",
+    "mocha-lcov-reporter": "*"
+  },
+  "scripts": {
+    "test": "make test-all"
+  }
+}
